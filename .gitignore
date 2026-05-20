@@ -1,5 +1,6 @@
 # Virtual environment
 venv/
+output/
 
 # Python cache
 __pycache__/
