@@ -1,15 +1,35 @@
-from src.logger_config import logger
+# =========================================================
+# By: EdderCR14
+# Initial project structure
+# Add file categorization
+# Implement logging system
+# Add duplicate file validation
+# Refactor organizer using pathlib
+# Add recursive folder scanning
+# =========================================================
+from loguru import logger
 from src.organizer import organize_files
+from src.report_generator import generate_report
 
+# =========================================================
+# MAIN EXECUTION
+# =========================================================
+if __name__ == "__main__":
 
-def main():
+    logger.info(
+        "Starting Intelligent File Organizer..."
+    )
 
-    logger.info("Starting Intelligent File Organizer")
-
+    # -----------------------------------------------------
+    # ORGANIZE FILES
+    # -----------------------------------------------------
     organize_files()
 
-    logger.info("Process completed")
+    # -----------------------------------------------------
+    # GENERATE EXCEL REPORT
+    # -----------------------------------------------------
+    generate_report()
 
-
-if __name__ == "__main__":
-    main()
+    logger.info(
+        "Process completed successfully."
+    )
