@@ -1,0 +1,21 @@
+input_folder: "input"
+
+output_folder: "output"
+
+report_folder: "reports"
+
+duplicate_strategy: "rename"
+
+log_level: "INFO"
+
+supported_extensions:
+  - pdf
+  - txt
+  - xlsx
+  - png
+  - jpg
+  - docx
+  - json
+  - vue
+  - sql
+  

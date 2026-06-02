@@ -1,7 +1,15 @@
+# =========================================================
+# By: EdderCR14
+# Date: 02 June, 2026
+# Goal: Move Files from INPUT_FOLDER TO OUTPUT_FOLDER
+# =========================================================
+
 from pathlib import Path
 import shutil
 from loguru import logger
-
+from src.config_loader import load_config
+from src.hash_utils import generate_file_hash
+from src.rename_utils import generate_unique_name
 
 def organize_files(input_folder="input", output_folder="output"):
 

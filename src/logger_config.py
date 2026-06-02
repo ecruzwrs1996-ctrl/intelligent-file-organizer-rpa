@@ -1,3 +1,9 @@
+# =========================================================
+# By: EdderCR14
+# Date: 02 June, 2026
+# Goal: Create log on directory
+# =========================================================
+
 from loguru import logger
 from pathlib import Path
 
